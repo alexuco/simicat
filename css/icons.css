@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@font-face {
+	font-family: minicons-webalys;
+	src: url("../fonts/demoicons/minicons-webalys.eot");
+	src: url("../fonts/demoicons/minicons-webalys.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/demoicons/minicons-webalys.ttf") format("truetype"),
+    url("../fonts/demoicons/minicons-webalys.svg#minicons-webalys") format("svg"),
+    url("../fonts/demoicons/minicons-webalys.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	clip: rect(auto,auto,auto,auto);
+	right: 100px;
+}
+
+/*@font-face {
+  font-family: 'FontAwesome';
+  src:url('../fonts/demoicons/FontAwesome.eot');
+  src:url('../fonts/demoicons/FontAwesome.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/demoicons/FontAwesome.woff') format('woff'),
+    url('../fonts/demoicons/FontAwesome.ttf') format('truetype'),
+    url('../fonts/demoicons/FontAwesome.svg#FontAwesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+.bt-icon:before,
+.bt-icon-alt:before {
+  font-family: "minicons-webalys";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none !important;
+  speak: none;
+  display: inline-block;
+  text-decoration: none;
+  width: 1em;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bt-icon-alt:before {
+  font-family: "FontAwesome";
+}
+
+.icon-window-delete:before {
+  content: "\e000";
+}
+
+.icon-download:before {
+  content: "\e002";
+}
+
+.icon-home:before {
+  content: "\e003";
+}
+
+.icon-calendar:before {
+  content: "\e004";
+}
+
+.icon-folder-add:before {
+  content: "\e001";
+}
+
+.icon-windows:before {
+  content: "\e008";
+}
+
+.icon-volume:before {
+  content: "\e00e";
+}
+
+.icon-speaker:before {
+  content: "\e011";
+}
+
+.icon-star:before {
+  content: "\e012";
+}
+
+.icon-sun:before {
+  content: "\e014";
+}
+
+.icon-trash:before {
+  content: "\e018";
+}
+
+.icon-zoom:before {
+  content: "\e005";
+}
+
+.icon-user-outline:before {
+  content: "\e006";
+}
+
+.icon-picture:before {
+  content: "\e007";
+}
+
+.icon-phone:before {
+  content: "\e009";
+}
+
+.icon-newspaper:before {
+	content: "\e00a";
+}
+
+.icon-printer:before {
+  content: "\e00b";
+}
+
+.icon-microwave:before {
+  content: "\e00c";
+}
+
+.icon-refresh:before {
+  content: "\e00d";
+}
+
+.icon-lock:before {
+  content: "\e00f";
+}
+
+.icon-email:before {
+  content: "\e010";
+}
+
+.icon-browser:before {
+  content: "\e013";
+}
+
+.icon-bubble:before {
+  content: "\e015";
+}
+
+.icon-calculator:before {
+  content: "\e016";
+}
+
+.icon-cd:before {
+  content: "\e017";
+}
+
+.icon-enter:before {
+  content: "\e019";
+}
+
+.icon-file-add:before {
+  content: "\e01a";
+}
+
+.icon-flag:before {
+  content: "\e01b";
+}
+
+.icon-twitter:before {
+  content: "\e01c";
+}
+
+.icon-gplus:before {
+  content: "\e020";
+}
+
+.icon-github:before {
+  content: "\e021";
+}
+
+.icon-facebook:before {
+  content: "\e01d";
+}
+
+/* Font Awesome */
+.icon-step-backward:before {
+  content: "\f048";
+}
+.icon-backward:before {
+  content: "\f04a";
+}
+.icon-pause:before {
+  content: "\f04c";
+}
+.icon-stop:before {
+  content: "\f04d";
+}
+.icon-forward:before {
+  content: "\f04e";
+}
+.icon-step-forward:before {
+  content: "\f051";
+}
+.icon-play:before {
+  content: "\f04b";
+}
+
+/*arrow*/
+@import "compass/css3";
+
+@include keyframes(bounce) {
+	0%, 20%, 50%, 80%, 100% {
+    @include transform(translateY(0));
+  }
+	40% {
+    @include transform(translateY(-30px));
+  }
+	60% {
+    @include transform(translateY(-15px));
+  }
+}
+
+
+body {
+  background: black;
+}
+
+.animated { 
+    -webkit-animation-duration: 8s; 
+    animation-duration: 8s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out; 
+    animation-iteration-count:infinite; 
+    -webkit-animation-iteration-count:infinite; 
+} 
+
+@-webkit-keyframes swing { 
+    20%, 40%, 60%, 80%, 100% { -webkit-transform-origin: top center; } 
+    20% { -webkit-transform: rotate(15deg); } 
+    40% { -webkit-transform: rotate(-10deg); } 
+    60% { -webkit-transform: rotate(5deg); } 
+    80% { -webkit-transform: rotate(-5deg); } 
+    100% { -webkit-transform: rotate(0deg); } 
+} 
+@keyframes swing { 
+    20% { transform: rotate(15deg); } 
+    40% { transform: rotate(-10deg); } 
+    60% { transform: rotate(5deg); } 
+    80% { transform: rotate(-5deg); } 
+    100% { transform: rotate(0deg); } 
+} 
+.swing { 
+    -webkit-transform-origin: top center; 
+    transform-origin: top center; 
+    -webkit-animation-name: swing; 
+    animation-name: swing; 
+}
+
+
+
